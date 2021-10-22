@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{l.name}}</title>
+    </head>
+    <body>
+        <h2>Welcome, {{l.name}}</h2>
+        <ul>
+            <li>Name: {{l.name}}</li>
+            <li>Username: {{l.username}}</li>
+            <li>Phone Number: {{l.phone_number}}</li>
+            <li>Email: {{l.email_id}}</li>
+        </ul>
+        <!-- <div>
+            <a href="{% url 'add' l.username %}">Add Student</a>
+        </div> -->
+        <div>
+            <a href="{% url 'index'  %}">Log Out</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add Students</title>
+    </head>
+    <body>
+        <form action="{% url 'add2' l.username %}" method = "post">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Enter Name">
+            <input type="text" name="email" placeholder="Enter Email Address">
+            <input type="number" name="phoneno" placeholder="Enter Phone Number">
+            <input type="text" name="username" placeholder ="Enter Username">
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="password" name="password2" placeholder="Re-enter Password">
+            <input type="submit" value="Add">
+        </form>
+    </body>
+</html>
